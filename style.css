@@ -1,0 +1,285 @@
+:root {
+--pink:#351203;
+--bg: #0a0a0a;
+--shadow: 1 5px 5px rgba(0 0 0/0.5);
+min-height: auto;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: "Work Sans", sans-serif;
+}
+
+.hero {
+    /* Gradasi dari biru tua ke hitam */
+    background: linear-gradient(135deg, #413804 0%, #000000 50%, #877612 100%);
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    color: white; /* Pastikan teks tetap terbaca */
+}
+.hero {
+    min-height: auto;
+    background-color: var(--bg);
+    position: relative; /* Tambahkan ini */
+    overflow: hidden;   /* Agar gambar tidak keluar jalur */
+}
+
+.hero {
+    min-height: auto;
+    background-color: var(--bg);
+}
+
+.hero h1 {
+    font-family: "Sacramento", cursive;
+    font-size: 4rem;
+}
+
+.hero h4{
+    font-size: 1.6rem;
+}
+
+.hero p{
+    font-size: 1.4rem;
+}
+
+.hero a:hover {
+    background-color: var(--pink);
+    color: rgb(255, 183, 0);
+    box-shadow: var(--shadow);
+}
+
+/* Container Utama */
+.simply-countdown {
+    display: flex !important;      /* Wajib ada agar berjejer ke samping */
+    flex-direction: row !important; /* Memastikan arahnya horizontal */
+    justify-content: center;       /* Supaya di tengah */
+    gap: 15px;                     /* Jarak antar kotak */
+    flex-wrap: nowrap;             /* Mencegah kotak turun ke bawah jika layar sempit */
+}
+
+/* Setiap Kotak (Hari, Jam, dll) */
+.simply-section {
+    display: flex !important;
+    flex-direction: column !important; /* Angka di atas, teks di bawah */
+    align-items: center;
+    justify-content: center;
+    background: var(--pink); /* Warna kotak */
+    border: 1px solid #fff;
+    border-radius: 8px;
+    width: 80px !important;  /* Paksa lebar kotak agar tidak melebar satu baris */
+    height: 80px !important; /* Paksa tinggi kotak */
+    padding: 10px;
+}
+
+/* Angka */
+.simply-amount {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+}
+
+/* Teks (Hari, Jam, Menit) */
+.simply-word {
+    font-size: 0.7rem;
+    display: block;
+}
+
+/* Memberi jarak di bawah judul UNDANGAN */
+h4 {
+    margin-bottom: 50px !important; 
+}
+
+/* Memberi jarak di bawah nama acara (Walimatussafar) */
+h1 {
+    margin-bottom: 10px !important;
+    line-height: 1; /* Mengatur jarak antar baris jika teksnya panjang */
+}
+
+/* Memberi jarak antara teks "Yang akan dilangsungkan" dengan kotak countdown */
+p {
+    margin-bottom: 30px !important;
+}
+
+/* Memberi jarak di bawah kotak countdown agar tidak nempel ke tombol */
+.simply-countdown {
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
+}
+
+/* Mengganti warna Angka (misal: 20, 5, 2) */
+.simply-amount {
+    color: #ffbb00e4 !important; /* Contoh warna emas */
+}
+
+/* Mengganti warna Teks (misal: hari, jam, menit) */
+.simply-word {
+    color: #ffbb00e4 !important; /* Warna putih */
+}
+
+#hero * {
+    color: #ffbb00e4 !important;
+}
+
+.hero h1, .hero h4, .hero p {
+    text-shadow: var(--shadow);
+}
+
+.mynavbar {
+
+}
+
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title{
+    font-family: 'Sacramento', cursive;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.mynavbar .nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.home {
+    background: linear-gradient(135deg, #413804 0%, #000000 50%, #877612 100%);
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: 0rem;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    height: 100vh;
+}
+
+#home * {
+    color: white !important;
+}
+/* media query */
+/*laptop*/
+@media (max-width: 992px){
+    html {
+        font-size: 75%;
+    }
+}
+
+/*tablet*/
+@media (max-width: 768px){
+    html {
+        font-size: 75%;
+    }
+}
+
+/*mobile phone*/
+@media (max-width: 576px){
+    html {
+        font-size: 75%;
+    }
+}
+
+.home .couple{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.home .couple h3{
+    font-family: 'Sacramento';
+    font-size: 2.4rem;
+}
+
+.home .couple img{
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.info{
+    background: linear-gradient(135deg, #413804 0%, #000000 50%, #877612 100%);
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+    height: 100vh;
+}
+
+.info h2{
+    color: white;
+    font-family: 'sacramento';
+    font-size: 5rem;
+}
+
+.info .description{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.info .card{
+    background-color: #fff !important;
+    color: white !important;
+    border: 1px solid white;
+}
+
+.info .card-header{
+    border-bottom: 1px solid #fff;
+    letter-spacing: 0.1rem;
+    font-family: 'Sacramento';
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+.info .card-body{
+    font-size: 1rem;
+}
+.info .card-footer{
+border-bottom: 1px solid #fff;
+font-size: 1rem;
+font-weight: 300;
+padding-bottom: 1.5rem;
+}
+
+.container-undangan{
+    color: white;
+}
+
+.info .card-footer{
+color: #fff !important;
+}
+
+.home h3{
+    font-family: 'Sacramento';
+    font-size: xx-large;
+}
+
+/* Pastikan scroll snap aktif */
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+/* Setiap bagian undangan harus seukuran layar */
+section {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+    position: relative;
+    overflow: hidden;
+}
+
+.home .couple h2{
+    font-family: 'Sacramento';
+}
+
+.title-custom {
+    font-family: 'Sacramento';
+    font-size: x-large;
+}
